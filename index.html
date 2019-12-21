@@ -184,7 +184,7 @@
           var filteredData = data.filter(function(p){
             return p.Position == "QB";
           });
-          for (i = 0; i < 10; i++){
+          for (i = 0; i < 32; i++){
             console.log(filteredData[i].Name)
             img = `<div class="p-1"><img class="h-12" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nfl/low-res/${filteredData[i].PlayerID}.png"/></div>`
             name = `<div class="p-1">${filteredData[i].Name}</div>`
