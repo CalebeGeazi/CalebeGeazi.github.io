@@ -18,7 +18,7 @@
         </div>
         <div class="border-b border-gray-400 flex items-center justify-between py-1">
           <div class="p-1">Budget: <span class="text-green-600">$50,000</span></div>
-          <div class="p-1">Remaining: <span class="text-green-600">$50,000</span></div>
+          <div class="p-1">Remaining: <span class="text-green-600">$40,000</span></div>
         </div>
         <div class="border-b border-gray-400 flex items-center justify-between py-1">
           <div class="rounded-full border border-blue-600 text-blue-600 h-8 w-8 flex items-center text-blue-600 justify-center">QB</div>
@@ -26,9 +26,10 @@
           <div class="p-1 text-gray-500">></div>
         </div>
         <div class="border-b border-gray-400 flex items-center justify-between py-1">
-          <div class="rounded-full border border-blue-600 text-blue-600 h-8 w-8 flex items-center justify-center">RB</div>
-          <div class="p-1 text-gray-500">SELECT RUNNING BACK</div>
-          <div class="p-1 text-gray-500">></div>
+            <div class="p-1"><img class="h-10" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nfl/low-res/18877.png"/></div>
+            <div class="w-48 p-1">C. McCaffrey (CAR vs IND)</div>
+            <div class="p-1 text-green-400">$10000</div>
+            <div class="p-1"><i class="block w-5 h-5 border border-red-500 text-red-500 rounded-full fi-plus flex items-center justify-center fi-x"></i></div>
         </div>
         <div class="border-b border-gray-400 flex items-center justify-between py-1">
           <div class="rounded-full border border-blue-600 text-blue-600 h-8 w-8 flex items-center justify-center">RB</div>
@@ -293,10 +294,10 @@
           });
           for (i = 0; i < 32; i++){
             console.log(filteredData[i].Name)
-            img = `<div class="p-1"><img class="h-12" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nfl/low-res/${filteredData[i].PlayerID}.png"/></div>`
+            img = `<div class="p-1"><img class="h-10" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nfl/low-res/${filteredData[i].PlayerID}.png"/></div>`
             opp = filteredData[i].Opponent
             team = filteredData[i].Team
-            name = `<div class="w-48 p-1">${filteredData[i].Name}(${team} vs ${opp})</div>`
+            name = `<div class="w-48 p-1">${filteredData[i].Name} (${team} vs ${opp})</div>`
             salary = `<div class="p-1 text-green-400">$${filteredData[i].DraftKingsSalary}</div>`
             add = `<div class="p-1"><i class="fi-plus"></i></div>`
             html = `
