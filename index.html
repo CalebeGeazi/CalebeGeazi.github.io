@@ -3,6 +3,7 @@
   <head>
     <title>DF Leagues</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width">
   </head>
   <body class="text-xs">
@@ -21,7 +22,7 @@
         </div>
         <div class="border-b border-gray-400 flex items-center justify-between py-1">
           <div class="rounded-full border border-blue-600 text-blue-600 h-8 w-8 flex items-center text-blue-600 justify-center">QB</div>
-          <div class="p-1 text-gray-500">SELECT QUARTERBBACK</div>
+          <div class="p-1 text-gray-500">SELECT QUARTERBACK</div>
           <div class="p-1 text-gray-500">></div>
         </div>
         <div class="border-b border-gray-400 flex items-center justify-between py-1">
@@ -73,6 +74,14 @@
           <div class="p-1">Research</div>
           <div class="p-1 border-r border-gray-400"></div>
           <div class="p-1">League</div>
+        </div>
+      </li>
+      <li style="max-width: 400px; min-width: 350px; height: 522px;" class="border border-black m-2 p-1 rounded relative data overflow-scroll">
+        <div class="border-b border-gray-400 flex items-center justify-between py-1">
+          <div class="p-1"><</div>
+          <div class="p-1">Select a Quarterback</div>
+          <div class="p-1"><i class="fi-magnifying-glass"></i></div>
+          <div class="p-1"><i class="fi-list"></i></div>
         </div>
       </li>
       <li style="max-width: 400px; min-width: 350px; height: 522px;" class="border border-black m-2 p-1 rounded relative">
@@ -165,5 +174,36 @@
         </div>
       </li>
     </ul>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(function(){
+        $.get( "https://api.sportsdata.io/v3/nfl/projections/json/PlayerGameProjectionStatsByWeek/2019/16?key=8dfe69933b0747bcbbed2d6ec23d3760", function( data ) {
+          var filteredData = data.filter(function(p){
+            return p.Position == "QB";
+          });
+          for (i = 0; i < 10; i++){
+            console.log(filteredData[i].Name)
+            img = `<div class="p-1"><img class="h-12" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nfl/low-res/${filteredData[i].PlayerID}.png"/></div>`
+            name = `<div class="p-1">${filteredData[i].Name}</div>`
+            opp = `<div class="p-1">${filteredData[i].Opponent}</div>`
+            team = filteredData[i].Team
+            salary = `<div class="p-1 text-green-400">$${filteredData[i].DraftKingsSalary}</div>`
+            add = `<div class="p-1"><i class="fi-plus"></i></div>`
+            html = `
+            <div class="border-b border-gray-400 flex items-center justify-between py-1">
+              ${img}
+              ${name} (${team})
+              ${salary}
+              <div class="p-1"><i class="block w-5 h-5 border border-black rounded-full fi-plus flex items-center justify-center fi-plus"></i></div>
+            </div>
+            `
+            $('.data').append(html)
+          }
+        });
+      })
+    </script>
   </body>
 </html>
