@@ -8,7 +8,7 @@
   </head>
   <body class="text-xs">
     <ul class="flex flex-wrap justify-start">
-      <li style="max-width: 400px; min-width: 350px; height: 522px;" class="border border-black m-2 p-1 rounded">
+      <li style="max-width: 400px; min-width: 350px; height: 540px;" class="border border-black m-2 p-1 rounded relative">
         <div class="border-b border-gray-400 flex items-center justify-start pb-1">
           <div class="rounded-full bg-black h-8 w-8 flex items-center justify-center text-white">img</div>
           <div class="p-1">CheeSe</div>
@@ -65,18 +65,21 @@
           <div class="p-1 text-gray-500">SELECT DEFENSE/SPECIAL TEAMS</div>
           <div class="p-1 text-gray-500">></div>
         </div>
-        <div class="flex items-center justify-between py-1 pin-b">
-          <div class="rounded-full bg-black h-8 w-8 flex items-center justify-center text-white">img</div>
-          <div class="p-1 text-red-400">My Team</div>
-          <div class="p-1 border-r border-gray-400"></div>
-          <div class="p-1">Matchup</div>
-          <div class="p-1 border-r border-gray-400"></div>
-          <div class="p-1">Research</div>
-          <div class="p-1 border-r border-gray-400"></div>
-          <div class="p-1">League</div>
+        <div class="py-1 absolute bottom-0 w-full pr-1">
+          <div class="flex items-center justify-between">
+            <div class="rounded-full bg-black h-8 w-8 flex items-center justify-center text-white">img</div>
+            <div class="p-1 text-red-400">My Team</div>
+            <div class="p-1 border-r border-gray-400"></div>
+            <div class="p-1">Matchup</div>
+            <div class="p-1 border-r border-gray-400"></div>
+            <div class="p-1">Research</div>
+            <div class="p-1 border-r border-gray-400"></div>
+            <div class="p-1">League</div>
+          </div>
         </div>
+        
       </li>
-      <li style="max-width: 400px; min-width: 350px; height: 522px;" class="border border-black m-2 p-1 rounded relative data overflow-scroll">
+      <li style="max-width: 400px; min-width: 350px; height: 540px;" class="border border-black m-2 p-1 rounded relative data overflow-scroll">
         <div class="border-b border-gray-400 flex items-center justify-between py-1">
           <div class="p-1"><</div>
           <div class="p-1">Select a Quarterback</div>
@@ -84,7 +87,7 @@
           <div class="p-1"><i class="fi-list"></i></div>
         </div>
       </li>
-      <li style="max-width: 400px; min-width: 350px; height: 522px;" class="border border-black m-2 p-1 rounded relative">
+      <li style="max-width: 400px; min-width: 350px; height: 540px;" class="border border-black m-2 p-1 rounded relative">
         <div class="border-b border-gray-400 flex items-center justify-between pb-1">
           <div class="rounded-full bg-black h-8 w-8 flex items-center justify-center text-white">img</div>
           <div class="p-1">CheeSe</div>
@@ -94,8 +97,9 @@
           <div class="p-1">Bell Cows</div>
           <div class="rounded-full bg-black h-8 w-8 flex items-center justify-center text-white">img</div>
         </div>
-        <div class="border-b border-gray-400 flex items-center justify-center py-1">
+        <div class="border-b border-gray-400 flex items-center justify-between py-1">
           <div class="p-1">IN PROGRESS</div>
+          <div class="p-1 text-blue-600">All Machups ></div>
         </div>
         <div class="border-b border-gray-400 flex items-center justify-between py-2">
           <div class="p-1 w-24">P. Mahomes</div>
@@ -173,6 +177,109 @@
           </div>
         </div>
       </li>
+      <li style="max-width: 400px; min-width: 350px; height: 540px;" class="border border-black m-2 p-1 rounded">
+        <div class="border-b border-gray-400 flex items-center justify-between pb-1">
+          <div class="p-1">Standings</div>
+          <div class="p-1 text-blue-600">View Details ></div>
+        </div>
+        <div class="border-b border-gray-400 flex items-center justify-between pb-1">
+          <div class="p-1 w-10">Rank</div>
+          <div class="p-1 w-40">Team</div>
+          <div class="p-1 w-12">W-L-T</div>
+          <div class="p-1 w-16">PR</div>
+        </div>
+        <div class="border-b border-gray-400 flex items-center justify-between py-2">
+          <div class="p-1 w-10 flex justify-around">1.
+            <div class="rounded-full bg-black h-4 w-4 flex items-center justify-around text-white"></div>
+          </div>
+          <div class="p-1 w-40">CheeSe</div>
+          <div class="p-1 w-12">10-3-0</div>
+          <div class="p-1 w-16">2000.01</div>
+        </div>
+        <div class="border-b border-gray-400 flex items-center justify-between py-2">
+          <div class="p-1 w-10 flex justify-around">2.
+            <div class="rounded-full bg-black h-4 w-4 flex items-center justify-around text-white"></div>
+          </div>
+          <div class="p-1 w-40">Bell Cows</div>
+          <div class="p-1 w-12">10-3-0</div>
+          <div class="p-1 w-16">2000.00</div>
+        </div>
+        <div class="border-b border-gray-400 flex items-center justify-between py-2">
+          <div class="p-1 w-10 flex justify-around">3.
+            <div class="rounded-full bg-black h-4 w-4 flex items-center justify-around text-white"></div>
+          </div>
+          <div class="p-1 w-40">Breakfast with Chung</div>
+          <div class="p-1 w-12">9-4-0</div>
+          <div class="p-1 w-16">1983.23</div>
+        </div>
+        <div class="border-b border-gray-400 flex items-center justify-between py-2">
+          <div class="p-1 w-10 flex justify-around">4.
+            <div class="rounded-full bg-black h-4 w-4 flex items-center justify-around text-white"></div>
+          </div>
+          <div class="p-1 w-40">Oreo's Optimal Team</div>
+          <div class="p-1 w-12">9-3-1</div>
+          <div class="p-1 w-16">1988.24</div>
+        </div>
+        <div class="border-b border-gray-400 flex items-center justify-between py-2">
+          <div class="p-1 w-10 flex justify-around">5.
+            <div class="rounded-full bg-black h-4 w-4 flex items-center justify-around text-white"></div>
+          </div>
+          <div class="p-1 w-40">Elementary</div>
+          <div class="p-1 w-12">8-4-1</div>
+          <div class="p-1 w-16">1973.11</div>
+        </div>
+        <div class="border-b border-gray-400 flex items-center justify-between py-2">
+          <div class="p-1 w-10 flex justify-around">6.
+            <div class="rounded-full bg-black h-4 w-4 flex items-center justify-around text-white"></div>
+          </div>
+          <div class="p-1 w-40">WEEDIES</div>
+          <div class="p-1 w-12">8-5-0</div>
+          <div class="p-1 w-16">1999.33</div>
+        </div>
+        <div class="border-b border-gray-400 flex items-center justify-between py-2">
+          <div class="p-1 w-10 flex justify-around">7.
+            <div class="rounded-full bg-black h-4 w-4 flex items-center justify-around text-white"></div>
+          </div>
+          <div class="p-1 w-40">Jack Louie's Team</div>
+          <div class="p-1 w-12">7-6-0</div>
+          <div class="p-1 w-16">1833.57</div>
+        </div>
+        <div class="border-b border-gray-400 flex items-center justify-between py-2">
+          <div class="p-1 w-10 flex justify-around">8.
+            <div class="rounded-full bg-black h-4 w-4 flex items-center justify-around text-white"></div>
+          </div>
+          <div class="p-1 w-40">Ryan Choi's Team</div>
+          <div class="p-1 w-12">6-8-0</div>
+          <div class="p-1 w-16">1789.34</div>
+        </div>
+        <div class="border-b border-gray-400 flex items-center justify-between py-2">
+          <div class="p-1 w-10 flex justify-around">9.
+            <div class="rounded-full bg-black h-4 w-4 flex items-center justify-around text-white"></div>
+          </div>
+          <div class="p-1 w-40">Bout to Go C.A.M.</div>
+          <div class="p-1 w-12">3-11-0</div>
+          <div class="p-1 w-16">1678.35</div>
+        </div>
+        <div class="border-b border-gray-400 flex items-center justify-between py-2">
+          <div class="p-1 w-10 flex justify-around">10.
+            <div class="rounded-full bg-black h-4 w-4 flex items-center justify-around text-white"></div>
+          </div>
+          <div class="p-1 w-40">Tommy's Boys</div>
+          <div class="p-1 w-12">1-13-0</div>
+          <div class="p-1 w-16">1543.02</div>
+        </div>
+        
+        <div class="flex items-center justify-between py-1 pin-b">
+          <div class="rounded-full bg-black h-8 w-8 flex items-center justify-center text-white">img</div>
+          <div class="p-1">My Team</div>
+          <div class="p-1 border-r border-gray-400"></div>
+          <div class="p-1">Matchup</div>
+          <div class="p-1 border-r border-gray-400"></div>
+          <div class="p-1">Research</div>
+          <div class="p-1 border-r border-gray-400"></div>
+          <div class="p-1 text-red-400">League</div>
+        </div>
+      </li>
     </ul>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -187,15 +294,15 @@
           for (i = 0; i < 32; i++){
             console.log(filteredData[i].Name)
             img = `<div class="p-1"><img class="h-12" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nfl/low-res/${filteredData[i].PlayerID}.png"/></div>`
-            name = `<div class="p-1">${filteredData[i].Name}</div>`
-            opp = `<div class="p-1">${filteredData[i].Opponent}</div>`
+            opp = filteredData[i].Opponent
             team = filteredData[i].Team
+            name = `<div class="w-48 p-1">${filteredData[i].Name}(${team} vs ${opp})</div>`
             salary = `<div class="p-1 text-green-400">$${filteredData[i].DraftKingsSalary}</div>`
             add = `<div class="p-1"><i class="fi-plus"></i></div>`
             html = `
             <div class="border-b border-gray-400 flex items-center justify-between py-1">
               ${img}
-              ${name} (${team})
+              ${name}
               ${salary}
               <div class="p-1"><i class="block w-5 h-5 border border-black rounded-full fi-plus flex items-center justify-center fi-plus"></i></div>
             </div>
