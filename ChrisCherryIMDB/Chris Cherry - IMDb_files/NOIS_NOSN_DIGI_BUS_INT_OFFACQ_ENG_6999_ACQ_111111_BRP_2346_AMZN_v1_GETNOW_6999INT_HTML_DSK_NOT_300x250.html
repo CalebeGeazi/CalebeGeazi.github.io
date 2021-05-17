@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- saved from url=(0252)https://s0.2mdn.net/8025626/1620331251324/NOIS_NOSN_DIGI_BUS_INT_OFFACQ_ENG_6999_ACQ_111111_BRP_2346_AMZN_v1_GETNOW_6999INT_HTML_DSK_NOT_300x250/NOIS_NOSN_DIGI_BUS_INT_OFFACQ_ENG_6999_ACQ_111111_BRP_2346_AMZN_v1_GETNOW_6999INT_HTML_DSK_NOT_300x250.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="ad.size" content="width=300, height=250">
+    <link rel="stylesheet" type="text/css" href="./style(2).css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+<!--    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700&display=swap" rel="stylesheet">-->
+    <script type="text/javascript">
+    var clickTag = "https://www.default.com/";
+
+    function checkGreensockReady(){
+                if ( window.TimelineMax ){
+                    //console.log('greensockready');
+                    startAd();
+                }else{
+                setTimeout( checkGreensockReady, 50 );
+                }
+                }
+    window.onload = checkGreensockReady;
+    </script>
+<script type="text/javascript">
+    
+  (function() {
+    var MAX_URL_PARAM_LENGTH = 34;
+    var CLICK_X_URL_KEY = 'nx';
+    var CLICK_Y_URL_KEY = 'ny';
+    var CREATIVE_DIMENSIONS_KEY = 'dim';
+    var AD_URL_PARAM = '&adurl=';
+
+    var relegateNavigation = '';
+    var urlParamMap = {};
+
+    urlParamMap[CLICK_X_URL_KEY] = null;
+    urlParamMap[CLICK_Y_URL_KEY] = null;
+    urlParamMap[CREATIVE_DIMENSIONS_KEY] = null;
+
+    var handleClickTagMessage = function(e) {
+      try {
+        var eventData = JSON.parse(e.data);
+      } catch (err) {
+        return;
+      }
+      if (eventData.isInitClickTag) {
+        if (eventData.clickTags) {
+          for (var i = 0; i < eventData.clickTags.length; i++) {
+            var clkTag = eventData.clickTags[i];
+            window[clkTag.name] = clkTag.url;
+          }
+        } else if (eventData.clickTag) {
+          window.clickTag = eventData.clickTag;
+        }
+        relegateNavigation = eventData.relegateNavigation;
+      }
+    };
+
+    var storeClickCoordinates = function(e) {
+      urlParamMap[CLICK_X_URL_KEY] = Math.round(e.clientX);
+      urlParamMap[CLICK_Y_URL_KEY] = Math.round(e.clientY);
+    };
+
+    var getCreativeDimensions = function() {
+      return window.innerWidth + 'x' + window.innerHeight;
+    }
+
+    var getExitClickParams = function(e) {
+      urlParamMap[CREATIVE_DIMENSIONS_KEY] = getCreativeDimensions();
+
+      var exitParams = '';
+      for (var key in urlParamMap) {
+        exitParams += '&' + key + '=';
+        if (urlParamMap[key] !== null) {
+          exitParams += urlParamMap[key];
+        }
+      }
+      return exitParams;
+    }
+
+    var appendExitClickParams = function(url) {
+      var adUrlIndex = url.toLowerCase().indexOf(AD_URL_PARAM);
+      var paramsToBeAdded = getExitClickParams();
+      if (adUrlIndex > -1 && paramsToBeAdded.length <= MAX_URL_PARAM_LENGTH) {
+        url = url.substr(0, adUrlIndex) + paramsToBeAdded +
+          url.substr(adUrlIndex);
+      };
+      return url;
+    };
+
+    if (open.call) {
+      window.open = function(open) {
+        return function(url, name, features) {
+          url = appendExitClickParams(url);
+          if (relegateNavigation === 'parent') {
+            var message = {'clickTag': url, 'isPostClickTag': true};
+            parent.postMessage(JSON.stringify(message), '*');
+          } else {
+            var args = [url, name];
+            if (features) {
+              args.push(features);
+            }
+            open.apply(window, args);
+          }
+        };
+      }(window.open);
+    }
+
+    if (window.addEventListener) {
+      window.addEventListener(
+          'message', handleClickTagMessage, false);
+      window.addEventListener('mousedown', storeClickCoordinates, true);
+    } else {
+      window.attachEvent('onmessage', handleClickTagMessage);
+    }
+  })();
+    
+  </script></head>
+<body>
+
+    <div id="container" style="visibility: visible;" class="pns" onclick="window.open(window.clickTag)">
+        
+        <!-- TURN ON/OFF Variables -->
+        <div name="Frames123EF_NoCount" id="Frames123EF_NoCount" src=""></div>
+        
+        <div name="Frames12EF_NoCount" id="Frames12EF_NoCount" src=""></div>
+        
+        <div name="BeyondFastTurnOnOFF" id="BeyondFastTurnOnOFF"></div>
+        
+        <!-- F1 Frame -->
+        <div id="bg_grey"></div>
+	
+        <div name="logoComcastBusiness" id="logoComcastBusiness" src=""><img src="./COMCAST-7516_logoComcastBusiness.svg"></div>
+        <div name="logoBeyondFast" id="logoBeyondFast" src="" style="opacity: 0; visibility: hidden;"></div>
+        
+        <div id="F1HeadlineHolder" style="opacity: 1; visibility: inherit;"> 
+            <div name="F1Headline" id="F1Headline">Every day in<br>business<br>is a big day.</div> 
+        </div>
+        
+        
+        <!-- F2 Frame -->	
+        <div id="F2HeadlineHolder" style="opacity: 0; visibility: hidden;"> 
+            <div name="F2Headline" id="F2Headline">Be ready with fast,<br>reliable Internet.</div> 
+        </div>
+        
+        
+        <!-- F3 Frame -->			
+        <div id="F3HeadlineHolder" style="opacity: 0; visibility: hidden;"> 
+            <div name="F3Headline" id="F3Headline">Plus, advanced<br>cybersecurity to help<br>protect connected<br>devices.</div> 
+        </div>
+        
+        <!-- F4 Frame -->			
+            <div id="F4HeadlineHolder" style="opacity: 0; visibility: hidden;"> 
+                <div id="line1" style="transform-origin: 50% 50%; transform: translate(0px, 0px); width: 0px;"></div>
+                <div name="F4Headline" id="F4Headline">Get started with 100 Mbps Internet</div> 
+                  <div id="line2" style="transform-origin: 50% 50%; transform: translate(0px, 0px); width: 0px;"></div>
+             </div>
+           
+        
+          <div id="F4SubHeadlineHolder" style="opacity: 0; visibility: hidden;"> 
+                <div name="F4SubHeadline" id="F4SubHeadline">Plus, free install when you buy online!</div> 
+            </div>
+           
+        <div id="F3BoltOnHolder" style="opacity: 0; visibility: hidden;"> 
+            <div name="F3BoltOn" id="F3BoltOn">for 24 mos. w/3-yr. agmt.</div> 
+        </div>
+            
+        <div id="endOffer" style="opacity: 0; visibility: hidden;">
+	       <div id="rightContent" class="rightContent">    
+	           <div name="offerCents" id="offerCents" class="pnc"></div> 
+	           <div name="offerTerms" id="offerTerms" class="pns" style="transform: translate(0px, -12px);">/mo.</div> 
+	       </div>  
+           <div name="offerPrice" id="offerPrice" class="pnc">69.99</div> 
+           <div name="dollar" id="dollar" class="pnc">$</div>
+           <div name="just" id="just" class="pnc"></div>  
+	   </div>
+      
+      
+       <!-- EF Frame -->
+       <div id="EFHeadlineHolder" style="opacity: 0; visibility: hidden; transform: translate(300px, 0px);"> 
+            <div name="EFHeadline" id="EFHeadline">Special offer!<br>Get up to a $500 Prepaid Card</div> 
+       </div>
+       <div id="EFCardContainer" style="opacity: 0; visibility: hidden;">
+<!--           <div name="EFCard" id="EFCard" src=""><img src = "assets/COMCAST-7478_EFCard.png"></div>-->
+           <div name="EFPrice" id="EFPrice" class="pnb">$500</div>
+       </div>
+           
+                   
+       <div id="ctaBg">
+            <div name="cta" id="cta">GET IT NOW</div>
+       </div>
+       <div name="PhoneBelow" id="PhoneBelow" x-ms-format-detection="none">(800) 501-6000</div> 
+        <div id="Restrictions" class="pns" style="opacity: 0; visibility: hidden;">Restrictions apply.</div>
+        <div id="terms" class="pns">Call for details.</div>
+     
+        </div>  
+   
+
+    <div name="staticImage" id="staticImage" src="" style="display: none;"></div>
+    
+    <!-- Scripts -->
+   <script src="./gsap_3.2.4_min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+
+
+
+</body></html>

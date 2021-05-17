@@ -1,0 +1,186 @@
+@charset "UTF-8";
+.banner {
+  border: 1px solid #000;
+  background: #12395b;
+  overflow: hidden;
+  display: block !important;
+}
+#btnExit {
+  cursor: pointer;
+  opacity: 0;
+}
+.bannerSize {
+  width: 300px;
+  height: 250px;
+}
+.hide {
+  opacity: 0;
+}
+.retina{
+  background-size: contain !important;
+}
+#copy01 {
+  top: 86px;
+  left: 216px;
+  width: 216px;
+  height: 30px;
+  background: url("copy01.svg");
+  opacity:0;
+}
+#copy02 {
+  top: 113px;
+  left: 216px;
+  width: 242px;
+  height: 32px;
+  background: url("copy02.svg");
+  opacity:0;
+}
+#copy03 {
+  top: 113px;
+  left: 215px;
+  width: 270px;
+  height: 32px;
+  background: url("copy03.svg");
+  opacity:0;
+}
+#copy04 {
+  top: 113px;
+  left: 215px;
+  width: 200px;
+  height: 32px;
+  background: url("copy04.svg");
+  opacity:0;
+}
+#copy05 {
+  top: 73px;
+  left: 515px;
+  width: 238px;
+  height: 98px;
+  background: url("copy05.svg");
+}
+#copy06 {
+  top: 167px;
+  left: 509px;
+  width: 222px;
+  height: 45px;
+  background: url("copy06.svg");
+}
+#copy07 {
+  top: 127px;
+  left: 32px;
+  width: 233px;
+  height: 32px;
+  background: url("copy_EF01.svg");
+  opacity:0;
+}
+.calendar{
+  top: 156px;
+  left: 18px;
+  width: 46px;
+  height: 46px;
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+#gold_calendar{
+  background: url('gold_calendar.svg');
+}
+#white_calendar{
+  background: url('white_calendar.svg');
+  opacity: 0;
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.car{
+  top: 162px;
+  left: 97px;
+  width: 50px;
+  height: 40px;
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+#gold_car1{
+  background: url('gold_car.svg');
+}
+#gold_car2{
+  background: url('gold_car.svg');
+  left: 149px;
+}
+#white_car1{
+  background: url('white_car.svg');
+  opacity: 0;
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+#white_car2{
+  background: url('white_car.svg');
+  left: 149px;
+  opacity: 0;
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+#gold_driver{
+  top: 160px;
+  left: 231px;
+  width: 42px;
+  height: 41px;
+  background: url('gold_driver.svg');
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+
+}
+#yellowLine{
+  top: -4px;
+  left: 67px;
+  width: 164px;
+  height: 12px;
+  background-color: #fac705;
+}
+#copy_eyebrow{
+  top: 11px;
+  left: 61px;
+  width: 174px;
+  height: 20px;
+  background: url(copy_eyebrow.svg);
+}
+#cta{
+  top: 177px;
+  left: 77px;
+  width: 145px;
+  height: 30px;
+  background-color: #fac705;
+  overflow: hidden;
+  opacity: 0;
+}
+#cta_copy{
+  top: 7px;
+  left: 3px;
+  width: 138px;
+  height: 16px;
+  background: url(copy_cta.svg) no-repeat;
+}
+#shimmer{
+    top:-9px;
+    left:-80px;
+    background: url(shimmer.png) no-repeat;
+    width: 76px;
+    height: 53px;
+    opacity: 1;
+}
+#logo02 {
+  top: 39px;
+  left: 117px;
+  background: url(logo.svg);
+  width: 70px;
+  height: 74px;
+  -moz-transform: scale(5);
+  -ms-transform: scale(5);
+  transform: scale(5);
+  opacity:0;
+}
+
