@@ -1,0 +1,3 @@
+[submodule "gtl-json"]
+	path = gtl-json
+	url = https://github.com/CalebeGeazi/gtl-json.git
